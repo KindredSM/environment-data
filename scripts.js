@@ -34,9 +34,9 @@ async function chartIt() {
             "Combined Land-Surface Air and Sea-Surface Water Temperature in C°",
           data: data.ys,
           fill: true,
-          backgroundColor: "rgba(255, 99, 132, 0.2)",
-          borderColor: "rgba(255, 99, 132, 1)",
-          borderWidth: 1,
+          backgroundColor: "rgba(0, 157, 255, 0.2)",
+          borderColor: "rgba(0, 157, 255, 1)",
+          borderWidth: 2,
         },
       ],
     },
@@ -44,7 +44,6 @@ async function chartIt() {
       scales: {
         y: {
           ticks: {
-            // Include a dollar sign in the ticks
             callback: function (value, index, ticks) {
               return value + "°";
             },
